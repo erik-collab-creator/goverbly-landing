@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Use — Verbly</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #07040f;
+    --bg2: #0e0820;
+    --surface: rgba(255,255,255,0.04);
+    --border: rgba(167,139,250,0.15);
+    --purple: #8b5cf6;
+    --purple-light: #c4b5fd;
+    --purple-dim: rgba(139,92,246,0.15);
+    --text: #ede9fe;
+    --text-muted: rgba(196,181,253,0.6);
+    --radius: 16px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    top: -200px; left: -200px;
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(139,92,246,0.10) 0%, transparent 70%);
+    pointer-events: none; z-index: 0;
+  }
+
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 48px;
+    background: rgba(7,4,15,0.85);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Clash Display', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--purple-light);
+    text-decoration: none;
+  }
+
+  .nav-logo img { width: 36px; height: 36px; }
+
+  nav a.back {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  nav a.back:hover { color: var(--text); }
+
+  .content {
+    position: relative;
+    z-index: 1;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 120px 24px 80px;
+  }
+
+  .page-title {
+    font-family: 'Clash Display', sans-serif;
+    font-size: clamp(32px, 5vw, 52px);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    margin-bottom: 8px;
+    background: linear-gradient(135deg, #c4b5fd, #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .last-updated {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-bottom: 48px;
+  }
+
+  h2 {
+    font-family: 'Clash Display', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--purple-light);
+    margin: 40px 0 12px;
+  }
+
+  p { color: var(--text-muted); margin-bottom: 16px; }
+
+  ul {
+    color: var(--text-muted);
+    padding-left: 20px;
+    margin-bottom: 16px;
+  }
+
+  ul li { margin-bottom: 6px; }
+
+  a { color: var(--purple-light); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 24px 28px;
+    margin: 32px 0;
+  }
+
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 32px 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+  }
+
+  footer .logo {
+    font-family: 'Clash Display', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--purple-light);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  footer p { font-size: 13px; color: var(--text-muted); margin: 0; }
+
+  footer a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 13px;
+    transition: color 0.2s;
+  }
+
+  footer a:hover { color: var(--text); }
+
+  @media (max-width: 768px) {
+    nav { padding: 16px 24px; }
+    footer { flex-direction: column; gap: 16px; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">
+    <img src="fox-mascot.png" onerror="this.style.display='none'" style="width:36px;height:36px;object-fit:contain;"> Verbly
+  </a>
+  <a href="index.html" class="back">← Back to home</a>
+</nav>
+
+<div class="content">
+  <h1 class="page-title">Terms of Use</h1>
+  <p class="last-updated">Last updated: May 2026</p>
+
+  <p>Please read these Terms of Use ("Terms") carefully before using the Verbly browser extension and website (collectively, the "Service"). By using Verbly, you agree to these Terms.</p>
+
+  <h2>1. Acceptance of Terms</h2>
+  <p>By installing or using Verbly, you confirm that you are at least 13 years old and agree to be bound by these Terms. If you do not agree, do not use the Service.</p>
+
+  <h2>2. Description of Service</h2>
+  <p>Verbly is a browser extension that provides inline text translation and vocabulary saving features to help users learn languages while browsing the web. The Service includes a free tier and an optional Premium subscription.</p>
+
+  <h2>3. User Accounts</h2>
+  <p>You may use Verbly without an account (with limited functionality) or sign in with Google to access full features. You are responsible for maintaining the security of your account and for all activity that occurs under it.</p>
+
+  <h2>4. Acceptable Use</h2>
+  <p>You agree not to:</p>
+  <ul>
+    <li>Use the Service for any unlawful purpose.</li>
+    <li>Attempt to reverse-engineer, decompile, or extract the source code of Verbly.</li>
+    <li>Use automated tools to abuse or overload the Service.</li>
+    <li>Resell or redistribute access to the Service without permission.</li>
+  </ul>
+
+  <h2>5. Free Tier Limits</h2>
+  <div class="card">
+    <p style="margin:0;">Free accounts are limited to <strong>20 translations per day</strong> and <strong>30 saved words</strong>. These limits may change at any time with reasonable notice.</p>
+  </div>
+
+  <h2>6. Premium Subscription</h2>
+  <p>Premium subscriptions are billed through Lemon Squeezy. By subscribing, you agree to Lemon Squeezy's terms of service. Subscriptions auto-renew unless cancelled before the renewal date. You can manage or cancel your subscription at <a href="https://app.lemonsqueezy.com/my-orders" target="_blank">app.lemonsqueezy.com/my-orders</a>.</p>
+  <p>Refunds are handled on a case-by-case basis. Contact us at <a href="mailto:verbly.customerservice@gmail.com">verbly.customerservice@gmail.com</a> for refund requests within 7 days of purchase.</p>
+
+  <h2>7. Intellectual Property</h2>
+  <p>The Verbly name, logo, and all content within the Service are the intellectual property of Verbly. You may not use them without prior written permission. Your saved vocabulary data belongs to you.</p>
+
+  <h2>8. Third-Party Services</h2>
+  <p>Verbly relies on third-party APIs (DeepL, Google, Supabase, Lemon Squeezy) to function. We are not responsible for the availability, accuracy, or policies of these services.</p>
+
+  <h2>9. Disclaimer of Warranties</h2>
+  <p>The Service is provided "as is" without warranties of any kind, express or implied. We do not guarantee that the Service will be uninterrupted, error-free, or that translations will be accurate for all use cases.</p>
+
+  <h2>10. Limitation of Liability</h2>
+  <p>To the maximum extent permitted by law, Verbly shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of the Service.</p>
+
+  <h2>11. Changes to These Terms</h2>
+  <p>We may update these Terms from time to time. Continued use of the Service after changes are posted constitutes your acceptance of the updated Terms. We will update the "Last updated" date above when changes are made.</p>
+
+  <h2>12. Termination</h2>
+  <p>We reserve the right to suspend or terminate accounts that violate these Terms, with or without notice.</p>
+
+  <h2>13. Contact</h2>
+  <p>If you have any questions about these Terms, please contact us at:<br>
+  <a href="mailto:verbly.customerservice@gmail.com">verbly.customerservice@gmail.com</a></p>
+</div>
+
+<footer>
+  <span class="logo">
+    <img src="fox-mascot.png" onerror="this.style.display='none'" style="width:30px;height:30px;object-fit:contain;"> Verbly
+  </span>
+  <p>© 2026 Verbly. All rights reserved.</p>
+  <div style="display:flex;gap:24px;">
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+    <a href="mailto:verbly.customerservice@gmail.com">verbly.customerservice@gmail.com</a>
+  </div>
+</footer>
+
+</body>
+</html>
